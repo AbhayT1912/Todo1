@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+h1{
+    text-align: center;
+}
+.container{
+    background-color: white;
+    max-width:600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#todoinput{
+    width: 75%;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #444444;
+    opacity: 0.8;
+}
+
+#addtodo{
+    border-radius: 5px;
+    border: none;
+    background-color: #5cabff;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+#addtodo:hover{
+    background-color: #a1a7a9;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+li:hover{
+    background-color: #48b6e9af;
+}
+
+li:last-child{
+ border-bottom: none;   
+}
+
+
+.filterbtn, .editbtn, .delbtn, .completebtn{
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #0b73a0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.editbtn{
+    background-color: #eeff00cf ;
+    color: black;
+}
+
+.editbtn:hover{
+    background-color: #9a9a0a;
+    color: white;
+}
+
+.delbtn{
+    background-color: #ff0000dd;
+    color: #000;
+}
+
+.delbtn:hover{
+    background-color: #9a0d0d;
+    color: white;
+}
+
+.completebtn{
+    background-color: #00ff00cb;
+    color: #000;
+}
+
+.completebtn:hover{
+    background-color: #0a9a0a;
+    color: white;
+}
+
+.filterbtn:hover{
+    background-color: #042838;
+}
+
+.todoitem{
+    letter-spacing: 1px;
+}
+
+.todoitem{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed{
+    text-decoration: line-through;
+}
+
